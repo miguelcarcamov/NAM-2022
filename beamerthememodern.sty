@@ -1,0 +1,133 @@
+%
+% Name    : beamerthememodern.sty
+% Author  : Nikolay Obedin (dancingrobot84@gmail.com)
+% Version : 0.1.0
+%
+
+\ProvidesPackage{beamerthememodern}[2014/08/31]
+\mode<presentation>
+
+
+% -- custom colors -- %
+\definecolor{modernWhite}{HTML}{ECF0F1}
+\definecolor{modernRed}{HTML}{E74C3C}
+\definecolor{modernBlue1}{HTML}{2980B9}
+\definecolor{modernBlue2}{HTML}{3498DB}
+\definecolor{modernGreen}{HTML}{1BAD58}
+\definecolor{modernDarkBlue}{HTML}{2C3E50}
+\definecolor{normalwhite}{RGB}{255, 255, 255}
+\definecolor{uom-purple}{RGB}{109, 0, 157} % R109 G0 B157
+\definecolor{uom-yellow}{RGB}{255,204,51} % R255 G204 B51 
+\definecolor{uom-grey}{RGB}{149,149,151} % R149 G149 B151
+
+
+% -- custom fonts -- %
+\usepackage{fontspec}
+\newfontfamily{\modernFontLight}{Roboto Light}
+\newfontfamily{\modernFontNormal}{Roboto}
+\newfontfamily{\modernFontBold}{Roboto Medium}
+\newfontfamily{\modernFontExtraBold}{Roboto Black}
+\setmainfont[Ligatures=TeX]{Roboto Light}
+\setsansfont[Ligatures=TeX]{Roboto Light}
+
+
+% -- general beamer colors -- %
+\setbeamercolor{palette primary}{bg=normalwhite, fg=modernBlue1}
+\setbeamercolor{palette secondary}{bg=uom-purple, fg=normalwhite}
+\setbeamercolor{palette tertiary}{bg=modernBlue1, fg=normalwhite}
+\setbeamercolor{palette quaternary}{bg=modernWhite, fg=modernDarkBlue}
+
+\setbeamercolor{title}{parent=palette primary}
+\setbeamercolor{subtitle}{parent=palette primary}
+\setbeamercolor{author}{parent=palette primary}
+\setbeamercolor{institute}{parent=palette primary}
+\setbeamercolor{date}{parent=palette primary}
+
+\setbeamercolor{frametitle}{parent=palette secondary}
+\setbeamercolor{section title}{parent=paletter secondary}
+\setbeamercolor{section in toc}{parent=palette primary}
+
+\setbeamercolor{background canvas}{parent=palette primary}
+\setbeamercolor{normal text}{fg=modernDarkBlue}
+\setbeamercolor{item}{fg=modernBlue1}
+
+\setbeamercolor{block title}{parent=palette tertiary}
+\setbeamercolor{block body}{parent=palette quaternary}
+\setbeamercolor{block title example}{bg=modernGreen!70, fg=normalwhite}
+\setbeamercolor{block body example}{parent=palette quaternary}
+\setbeamercolor{block title alerted}{bg=modernRed!70, fg=normalwhite}
+\setbeamercolor{block body alerted}{parent=palette quaternary}
+
+\setbeamercolor{structure}{fg=modernBlue1}
+
+
+% -- beamer fonts -- %
+\setbeamerfont{title}{family=\modernFontExtraBold, size=\fontsize{25}{25}}
+\setbeamerfont{subtitle}{family=\modernFontBold, size=\fontsize{15}{15}}
+\setbeamerfont{author}{family=\modernFontNormal, size=\fontsize{10}{10}}
+\setbeamerfont{institute}{family=\modernFontNormal, size=\fontsize{10}{10}}
+\setbeamerfont{date}{family=\modernFontNormal, size=\fontsize{7}{7}}
+
+\setbeamerfont{frametitle}{family=\modernFontBold, size=\fontsize{10}{10}}
+\setbeamerfont{section title}{family=\modernFontNormal, size=\fontsize{25}{25}}
+\setbeamerfont{section in toc}{family=\modernFontNormal, size=\fontsize{13}{13}}
+
+\setbeamerfont{item}{family=\modernFontNormal}
+\setbeamerfont{block title}{family=\modernFontNormal}
+\setbeamerfont{block body}{family=\modernFontLight}
+\setbeamerfont{block title example}{family=\modernFontNormal}
+\setbeamerfont{block body example}{family=\modernFontLight}
+\setbeamerfont{block title alerted}{family=\modernFontNormal}
+\setbeamerfont{block body alerted}{family=\modernFontLight}
+
+\setbeamerfont{page number in head/foot}{family=\modernFontBold}
+
+
+% -- beamer frame title -- %
+\setbeamertemplate{frametitle}{
+    \vspace{-0.5ex}
+    \begin{beamercolorbox}[wd=\paperwidth,leftskip=0.3cm,rightskip=0.3cm,ht=3.5ex,dp=2ex]{frametitle}
+        \usebeamerfont{frametitle}\MakeUppercase{\insertframetitle}%
+    \end{beamercolorbox}
+}
+
+
+% -- section frame -- %
+\newcommand{\insertsectionHEAD}{\expandafter\insertsectionHEADaux\insertsectionhead}
+\newcommand{\insertsectionHEADaux}[3]{\MakeUppercase{#3}}
+\AtBeginSection[]{
+    \begingroup
+        \setbeamercolor{background canvas}{parent=palette secondary}
+        \begin{frame}[plain]
+            \centering
+            \vfill
+            \usebeamerfont{section title}\usebeamercolor[fg]{frametitle}\insertsectionHEAD
+            \vfill
+        \end{frame}
+    \endgroup
+}
+
+
+% -- toc elements -- %
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+
+
+% -- itemize bullets -- %
+\newcommand{\modernBullet}{•}
+\setbeamertemplate{itemize item}{\modernBullet}
+\setbeamertemplate{itemize subitem}{\modernBullet}
+\setbeamertemplate{itemize subsubitem}{\modernBullet}
+
+
+% -- footline -- %
+\usenavigationsymbolstemplate{}
+\setbeamertemplate{footline} {
+    \begin{beamercolorbox}[wd=\textwidth,ht=3ex,dp=1.5ex,leftskip=0.3cm,rightskip=0.3cm]{structure}
+    \hfill\usebeamerfont{page number in head/foot}
+    \insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}
+}
+
+
+\mode<all>
