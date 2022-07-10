@@ -5,7 +5,7 @@
 \usepackage{hyperref}
 \usepackage{tikz}
 %\usepackage{natbib}
-\usepackage[style=authoryear]{biblatex}
+\usepackage[style=authoryear, backend=bibtex]{biblatex}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{multimedia}
@@ -36,65 +36,65 @@
 
 \begin{document}
 
-    \frame[plain]{\titlepage}
+\frame[plain]{\titlepage}
 
-    %\begin{frame}{Where do cosmic magnetic fields come from?}
-    %\begin{columns} [onlytextwidth,t]
-    % Column 1
-    %    \begin{column}{.5\textwidth}
-    %       \begin{itemize}
-	%			\item Galaxy evolution
-	%			\item Star formation
-	%			\item Supernova remnants
-	%			\item Origin is \alert{\textbf{UNKNOWN}}
-	%		\end{itemize}
-	%		\begin{itemize}
-	%			\item Two main ways to study CMF:
-	%			      \begin{itemize}
-	%				      \item \textbf{Filaments in voids}
-	%				      \item Galaxy clusters
-	%			      \end{itemize}
-	%		\end{itemize}
-    %    \end{column}
-% Column 2    
-    %\begin{column}{.5\textwidth}
-    %    \begin{figure}
-    %        \centering
-   %         \includegraphics[width=\textwidth]{figures/MeerKATDeep2_compositeV6.jpg}
-    %        \caption*{Credit: SARAO}
-   %     \end{figure}
-    %\end{column}%
-    
-    %\end{columns}
-    
-   % \end{frame}
-    \begin{frame}{Studying magnetic fields using Faraday Rotation}
-    \begin{figure}
-			    \centering
-			    \includegraphics[width=.8\textwidth]{figures/faraday_rot.png}
-			    \caption*{Faraday rotation illustration. Credit: \href{https://emmaalexander.github.io/resources.html}{Emma Alexander}.}
-			\end{figure}
-    \end{frame}
-    
-    \begin{frame}{Studying magnetic fields using Faraday Rotation}
-    \footnotesize
-    \begin{columns}
-		
+%\begin{frame}{Where do cosmic magnetic fields come from?}
+%\begin{columns} [onlytextwidth,t]
+% Column 1
+%    \begin{column}{.5\textwidth}
+%       \begin{itemize}
+%			\item Galaxy evolution
+%			\item Star formation
+%			\item Supernova remnants
+%			\item Origin is \alert{\textbf{UNKNOWN}}
+%		\end{itemize}
+%		\begin{itemize}
+%			\item Two main ways to study CMF:
+%			      \begin{itemize}
+%				      \item \textbf{Filaments in voids}
+%				      \item Galaxy clusters
+%			      \end{itemize}
+%		\end{itemize}
+%    \end{column}
+% Column 2
+%\begin{column}{.5\textwidth}
+%    \begin{figure}
+%        \centering
+%         \includegraphics[width=\textwidth]{figures/MeerKATDeep2_compositeV6.jpg}
+%        \caption*{Credit: SARAO}
+%     \end{figure}
+%\end{column}%
+
+%\end{columns}
+
+% \end{frame}
+\begin{frame}{Studying magnetic fields using Faraday Rotation}
+	\begin{figure}
+		\centering
+		\includegraphics[width=.8\textwidth]{figures/faraday_rot.png}
+		\caption*{Faraday rotation illustration. Credit: \href{https://emmaalexander.github.io/resources.html}{Emma Alexander}.}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Studying magnetic fields using Faraday Rotation}
+	\footnotesize
+	\begin{columns}
+
 		\begin{column}{0.55\textwidth}
 			%The RM Synthesis method exploits a Fourier relationship between polarisation intensity ($P$) as a function of wavelength squared and the Faraday dispersion function to recover polarised intensity as a function of Faraday depth $\phi$ along a line of sight (LOS)
-			
+
 			%\begin{equation}
 			%	\label{eq:fourier}
 			%	F(\phi) = \int_{-\infty}^{\infty}{ P(\lambda^2){\rm e}^{-2i\phi \lambda^2}~{\rm d}\lambda^2 },
 			%\end{equation}
-			
+
 			%where
 			%
 			%\begin{equation}
 			%	\label{eq:pol}
 			%	P(\lambda^2) = |P(\lambda^2)|{\rm e}^{2i\chi(\lambda^2)} = Q(\lambda^2) + iU(\lambda^2).
 			%\end{equation}
-			
+
 			\begin{block}{Rotation Measure}
 				\begin{equation*}
 					\text{RM} = 0.81 \int_{\text{source}}^{\text{observer}} n_e(r) B_{||}(r) \cdot dr\; \text{rad}\;\text{m}^{-2}
@@ -105,34 +105,34 @@
 
 		\begin{column}{0.45\textwidth}
 			\begin{figure}
-			    \centering
-			    \includegraphics[width=\textwidth]{figures/faraday_rot.png}
-			    \caption*{Faraday rotation illustration. Credit: \href{https://emmaalexander.github.io/resources.html}{Emma Alexander}.}
+				\centering
+				\includegraphics[width=\textwidth]{figures/faraday_rot.png}
+				\caption*{Faraday rotation illustration. Credit: \href{https://emmaalexander.github.io/resources.html}{Emma Alexander}.}
 			\end{figure}
 		\end{column}
 	\end{columns}
 
-    \end{frame}
-    
-    \begin{frame}{Studying magnetic fields using Faraday Rotation}
-    \footnotesize
-    \begin{columns}
-		
+\end{frame}
+
+\begin{frame}{Studying magnetic fields using Faraday Rotation}
+	\footnotesize
+	\begin{columns}
+
 		\begin{column}{0.55\textwidth}
 			%The RM Synthesis method exploits a Fourier relationship between polarisation intensity ($P$) as a function of wavelength squared and the Faraday dispersion function to recover polarised intensity as a function of Faraday depth $\phi$ along a line of sight (LOS)
-			
+
 			%\begin{equation}
 			%	\label{eq:fourier}
 			%	F(\phi) = \int_{-\infty}^{\infty}{ P(\lambda^2){\rm e}^{-2i\phi \lambda^2}~{\rm d}\lambda^2 },
 			%\end{equation}
-			
+
 			%where
 			%
 			%\begin{equation}
 			%	\label{eq:pol}
 			%	P(\lambda^2) = |P(\lambda^2)|{\rm e}^{2i\chi(\lambda^2)} = Q(\lambda^2) + iU(\lambda^2).
 			%\end{equation}
-			
+
 			\begin{block}{Rotation Measure}
 				\begin{equation*}
 					\mypos{\text{RM}}{rm} = 0.81 \int_{\text{source}}^{\text{observer}} \mypos{$n_e$}{ne}(r) \mypos{$B_{||}$}{be}(r) \cdot dr\; \text{rad}\;\text{m}^{-2}
@@ -151,9 +151,9 @@
 
 		\begin{column}{0.45\textwidth}
 			\begin{figure}
-			    \centering
-			    \includegraphics[width=\textwidth]{figures/faraday_rot.png}
-			    \caption*{Faraday rotation illustration. Credit: \href{https://emmaalexander.github.io/resources.html}{Emma Alexander}.}
+				\centering
+				\includegraphics[width=\textwidth]{figures/faraday_rot.png}
+				\caption*{Faraday rotation illustration. Credit: \href{https://emmaalexander.github.io/resources.html}{Emma Alexander}.}
 			\end{figure}
 		\end{column}
 	\end{columns}
@@ -166,398 +166,398 @@
 		\draw[->, modernRed, very thick, opacity=0.3] (C.north west) to[bend left] ++(1,0.5) node[modernRed, anchor=west] (Ctext) {\textbf{What we want}};
 		\draw[->, modernRed, very thick, opacity=0.3] (Atext.south west) to [bend right] ++(-1.,-1.5) node[modernRed!80, anchor=west] (ppos) {};
 	\end{tikzpicture}
-    \end{frame}
-    
-    % \begin{frame}{Problems in wavelength squared space}
-    % 
-    % \begin{columns}[onlytextwidth,t]
-    %     \begin{column}{.7\textwidth}
-    %         \begin{figure}
-    %             \centering
-    %             \includegraphics[width=\textwidth]{figures/example_ursi.pdf}
-    %             %\caption{Caption}
-    %             %\label{fig:my_label}
-    %         \end{figure}
-    %     \end{column}
-    %     \begin{column}{.3\textwidth}
-    %         \begin{itemize}
-    %            \item No data at $\lambda^2 < 0 $
-    %             \item Irregular spacing in $\lambda^2$-space
-    %             \item Samples are flagged due to RFI excision
-    %             \item \alert{NOISE!}
-    %         \end{itemize}
-    %     \end{column}
-    % \end{columns}
-        
-    % \end{frame}
-    
-   \begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
-            \begin{figure}
-                \centering
-                \includegraphics[width=0.2\textwidth]{figures/logos/GitHub-Mark-120px-plus.png}
-                %\caption{Caption}
-                %\label{fig:my_label}
-            \end{figure}
-            
-            \begin{center}
-             \url{http://github.com/miguelcarcamov/csromer} 
-            \end{center}
-            
+\end{frame}
 
-    \end{frame}
-  
-    \begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
-        \begin{columns}[onlytextwidth,t]
-    % Column 1
-        \begin{column}{.5\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.5]{figures/logos/GitHub-Mark-120px-plus.png}
-                %\caption{Caption}
-                %\label{fig:my_label}
-            \end{figure}
-            
-            \url{http://github.com/miguelcarcamov/csromer}
-        \end{column}
-% Column 2    
-    \begin{column}{.5\textwidth}
-        \begin{itemize}
-            \item Reconstruction of Faraday depth sources from linearly polarized data with CS
+% \begin{frame}{Problems in wavelength squared space}
+%
+% \begin{columns}[onlytextwidth,t]
+%     \begin{column}{.7\textwidth}
+%         \begin{figure}
+%             \centering
+%             \includegraphics[width=\textwidth]{figures/example_ursi.pdf}
+%             %\caption{Caption}
+%             %\label{fig:my_label}
+%         \end{figure}
+%     \end{column}
+%     \begin{column}{.3\textwidth}
+%         \begin{itemize}
+%            \item No data at $\lambda^2 < 0 $
+%             \item Irregular spacing in $\lambda^2$-space
+%             \item Samples are flagged due to RFI excision
+%             \item \alert{NOISE!}
+%         \end{itemize}
+%     \end{column}
+% \end{columns}
 
-        \end{itemize}
-    \end{column}%
-    
-    \end{columns}
-    \end{frame}
-    
-    \begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
-        \begin{columns}[onlytextwidth,t]
-    % Column 1
-        \begin{column}{.5\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.5]{figures/logos/GitHub-Mark-120px-plus.png}
-                %\caption{Caption}
-                %\label{fig:my_label}
-            \end{figure}
-            
-            \url{http://github.com/miguelcarcamov/csromer}
-        \end{column}
-% Column 2    
-    \begin{column}{.5\textwidth}
-        \begin{itemize}
-            \item Reconstruction of Faraday depth sources from linearly polarized data with CS
-            \item More than 100 wavelet filters provided by {\tt Pywavelets}
+% \end{frame}
 
-        \end{itemize}
-    \end{column}%
-    
-    \end{columns}
-    \end{frame}
-    
-    \begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
-        \begin{columns}[onlytextwidth,t]
-    % Column 1
-        \begin{column}{.5\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.5]{figures/logos/GitHub-Mark-120px-plus.png}
-                %\caption{Caption}
-                %\label{fig:my_label}
-            \end{figure}
-            
-            \url{http://github.com/miguelcarcamov/csromer}
-        \end{column}
-% Column 2    
-    \begin{column}{.5\textwidth}
-        \begin{itemize}
-            \item Reconstruction of Faraday depth sources from linearly polarized data with CS
-            \item More than 100 wavelet filters provided by {\tt Pywavelets}
-            \item Simulation of Faraday depth sources directly in $\lambda^2$-space
-  
-        \end{itemize}
-    \end{column}%
-    
-    \end{columns}
-    \end{frame}
-    
-    \begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
-        \begin{columns}[onlytextwidth,t]
-    % Column 1
-        \begin{column}{.5\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.5]{figures/logos/GitHub-Mark-120px-plus.png}
-                %\caption{Caption}
-                %\label{fig:my_label}
-            \end{figure}
-            
-            \url{http://github.com/miguelcarcamov/csromer}
-        \end{column}
-% Column 2    
-    \begin{column}{.5\textwidth}
-        \begin{itemize}
-            \item Reconstruction of Faraday depth sources from linearly polarized data with CS
-            \item More than 100 wavelet filters provided by {\tt Pywavelets}
-            \item Simulation of Faraday depth sources directly in $\lambda^2$-space
-            \item Subtraction of Galactic RM
+\begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.2\textwidth]{figures/logos/GitHub-Mark-120px-plus.png}
+		%\caption{Caption}
+		%\label{fig:my_label}
+	\end{figure}
 
-        \end{itemize}
-    \end{column}%
-    
-    \end{columns}
-    \end{frame}
-    
-    \begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
-        \begin{columns}[onlytextwidth,t]
-    % Column 1
-        \begin{column}{.5\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.5]{figures/logos/GitHub-Mark-120px-plus.png}
-                %\caption{Caption}
-                %\label{fig:my_label}
-            \end{figure}
-            
-            \url{http://github.com/miguelcarcamov/csromer}
-        \end{column}
-% Column 2    
-    \begin{column}{.5\textwidth}
-        \begin{itemize}
-            \item Reconstruction of Faraday depth sources from linearly polarized data with CS
-            \item More than 100 wavelet filters provided by {\tt Pywavelets}
-            \item Simulation of Faraday depth sources directly in $\lambda^2$-space
-            \item Subtraction of Galactic RM
-            \item Spectral index correction
-        \end{itemize}
-    \end{column}%
-    
-    \end{columns}
-    \end{frame}
-    
-    \begin{frame}{Simulation of Faraday sources}
-    \begin{itemize}
-        \item Simulation of thin, thick or mixed sources
-        \item Simulation of RFI flagging
-        \item Noise application to simulated data
-    \end{itemize}
-        
-    \end{frame}
-    
-    
-    
-    \begin{frame}{Thin, thick, mixed sources}
-    
-    \begin{figure}
-            \centering
-            
-            \begin{subfigure}{0.2\textwidth}
-                \includegraphics[width=\textwidth]{figures/sources/thin_source.pdf}
-                \caption{Thin source}
-            \end{subfigure}
-            \begin{subfigure}{0.2\textwidth}
-                \includegraphics[width=\textwidth]{figures/sources/thick_source.pdf}
-                \caption{Thick source}
-            \end{subfigure}
-            \begin{subfigure}{0.2\textwidth}
-                %\vspace{0.4cm}
-                \includegraphics[width=\textwidth]{figures/sources/mixed_source.pdf}
-                \caption{Mixed source}
-            \end{subfigure}
-        \end{figure}
-        
-    \end{frame}
-    
-    \begin{frame}{RFI \& noise example}
-    
-        \begin{figure}
-            \centering
-            
-            \begin{subfigure}{0.2\textwidth}
-                \includegraphics[width=\textwidth]{figures/dataset_features/data_normal.pdf}
-                \caption{Complete dataset}
-            \end{subfigure}
-            \begin{subfigure}{0.2\textwidth}
-                \includegraphics[width=\textwidth]{figures/dataset_features/data_removed.pdf}
-                \caption{20\% data removed}
-            \end{subfigure}
-            \begin{subfigure}{0.2\textwidth}
-                %\vspace{0.1cm}
-                \includegraphics[width=\textwidth]{figures/dataset_features/data_noisy.pdf}
-                \caption{0.7\,mJy/beam noise}
-            \end{subfigure}
-        \end{figure}
-        
-    \end{frame}
-    
-    \begin{frame}{Galactic RM derotation}
-        \begin{columns}[onlytextwidth,t]
-            \begin{column}{.5\textwidth}
-            \begin{itemize}
-                \item The framework applies the derotation directly in $\lambda^2$-space as a phase shift.
-            \end{itemize}
-            \vspace{1cm}
-                \begin{equation*}
-                    \hat{P}(\lambda^2) = P(\lambda^2)e^{-2i\phi_{\text{GAL}}\lambda^2}
-                \end{equation*}
-            \end{column}
-            
-            \begin{column}{.5\textwidth}
-                \begin{figure}
-                    \centering
-                    \includegraphics[width=\textwidth]{figures/galactic_derotation/image (2).png}
-                    \caption*{Mean Galactic RM \parencite{faradaysky2020}}
-                    %\label{fig:my_label}
-                \end{figure}
-            \end{column}
-        \end{columns}
-    \end{frame}
-    
-    \begin{frame}{Spectral index correction}
-        \begin{columns}[onlytextwidth,t]
-        \begin{column}{.5\textwidth}
-            \begin{equation*}
-                F(\phi) = \frac{1}{K}\int_{-\infty}^{\infty}{W(\lambda^2)\frac{P(\lambda^2)}{s(\lambda^2)} {\rm e}^{-2i\phi \lambda^2}~{\rm d}\lambda^2 }
-            \end{equation*}
-            
-            \begin{equation*}
-                s(\lambda^2) = \frac{I(\lambda^2)}{I(\lambda^2_0)} = \biggl(\frac{\lambda^2}{\lambda^2_0}\biggr)^{-\alpha/2}
-            \end{equation*}
-            \vspace{1cm}
-            \begin{itemize}
-                \item \cite{brentjens}
-                \item For real data we can use FITS/CASA spectral index images
-            \end{itemize}
-        \end{column}
-        
-        \begin{column}{.5\textwidth}
-            % Add lambda^2 plots before and after spectral index correction
-            \begin{figure}
-                \centering
-                \includegraphics[width=.4\textwidth]{figures/dataset_features/spectral_index_correction.pdf}
-                \caption*{$\lambda^2$-space before and after spectral index correction}
-                %\label{fig:my_label}
-            \end{figure}
-        \end{column}
-            
-        \end{columns}
-    \end{frame}
-    
-    \begin{frame}{Compressed sensing reconstruction}
-        \scriptsize
-        \begin{columns}[onlytextwidth,t]
-        \begin{column}{.5\textwidth}
-            \begin{itemize}
-                \item Technique that aims to solve inverse problems
-                \item Finds the sparsest signal that is consistent with the measurements and to a specific constraint.
-            \end{itemize}
-            
+	\begin{center}
+		\url{http://github.com/miguelcarcamov/csromer}
+	\end{center}
+
+
+\end{frame}
+
+\begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
+	\begin{columns}[onlytextwidth,t]
+		% Column 1
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/logos/GitHub-Mark-120px-plus.png}
+				%\caption{Caption}
+				%\label{fig:my_label}
+			\end{figure}
+
+			\url{http://github.com/miguelcarcamov/csromer}
+		\end{column}
+		% Column 2
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Reconstruction of Faraday depth sources from linearly polarized data with CS
+
+			\end{itemize}
+		\end{column}%
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
+	\begin{columns}[onlytextwidth,t]
+		% Column 1
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/logos/GitHub-Mark-120px-plus.png}
+				%\caption{Caption}
+				%\label{fig:my_label}
+			\end{figure}
+
+			\url{http://github.com/miguelcarcamov/csromer}
+		\end{column}
+		% Column 2
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Reconstruction of Faraday depth sources from linearly polarized data with CS
+				\item More than 100 wavelet filters provided by {\tt Pywavelets}
+
+			\end{itemize}
+		\end{column}%
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
+	\begin{columns}[onlytextwidth,t]
+		% Column 1
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/logos/GitHub-Mark-120px-plus.png}
+				%\caption{Caption}
+				%\label{fig:my_label}
+			\end{figure}
+
+			\url{http://github.com/miguelcarcamov/csromer}
+		\end{column}
+		% Column 2
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Reconstruction of Faraday depth sources from linearly polarized data with CS
+				\item More than 100 wavelet filters provided by {\tt Pywavelets}
+				\item Simulation of Faraday depth sources directly in $\lambda^2$-space
+
+			\end{itemize}
+		\end{column}%
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
+	\begin{columns}[onlytextwidth,t]
+		% Column 1
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/logos/GitHub-Mark-120px-plus.png}
+				%\caption{Caption}
+				%\label{fig:my_label}
+			\end{figure}
+
+			\url{http://github.com/miguelcarcamov/csromer}
+		\end{column}
+		% Column 2
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Reconstruction of Faraday depth sources from linearly polarized data with CS
+				\item More than 100 wavelet filters provided by {\tt Pywavelets}
+				\item Simulation of Faraday depth sources directly in $\lambda^2$-space
+				\item Subtraction of Galactic RM
+
+			\end{itemize}
+		\end{column}%
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
+	\begin{columns}[onlytextwidth,t]
+		% Column 1
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.5]{figures/logos/GitHub-Mark-120px-plus.png}
+				%\caption{Caption}
+				%\label{fig:my_label}
+			\end{figure}
+
+			\url{http://github.com/miguelcarcamov/csromer}
+		\end{column}
+		% Column 2
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Reconstruction of Faraday depth sources from linearly polarized data with CS
+				\item More than 100 wavelet filters provided by {\tt Pywavelets}
+				\item Simulation of Faraday depth sources directly in $\lambda^2$-space
+				\item Subtraction of Galactic RM
+				\item Spectral index correction
+			\end{itemize}
+		\end{column}%
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Simulation of Faraday sources}
+	\begin{itemize}
+		\item Simulation of thin, thick or mixed sources
+		\item Simulation of RFI flagging
+		\item Noise application to simulated data
+	\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Thin, thick, mixed sources}
+
+	\begin{figure}
+		\centering
+
+		\begin{subfigure}{0.2\textwidth}
+			\includegraphics[width=\textwidth]{figures/sources/thin_source.pdf}
+			\caption{Thin source}
+		\end{subfigure}
+		\begin{subfigure}{0.2\textwidth}
+			\includegraphics[width=\textwidth]{figures/sources/thick_source.pdf}
+			\caption{Thick source}
+		\end{subfigure}
+		\begin{subfigure}{0.2\textwidth}
+			%\vspace{0.4cm}
+			\includegraphics[width=\textwidth]{figures/sources/mixed_source.pdf}
+			\caption{Mixed source}
+		\end{subfigure}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}{RFI \& noise example}
+
+	\begin{figure}
+		\centering
+
+		\begin{subfigure}{0.2\textwidth}
+			\includegraphics[width=\textwidth]{figures/dataset_features/data_normal.pdf}
+			\caption{Complete dataset}
+		\end{subfigure}
+		\begin{subfigure}{0.2\textwidth}
+			\includegraphics[width=\textwidth]{figures/dataset_features/data_removed.pdf}
+			\caption{20\% data removed}
+		\end{subfigure}
+		\begin{subfigure}{0.2\textwidth}
+			%\vspace{0.1cm}
+			\includegraphics[width=\textwidth]{figures/dataset_features/data_noisy.pdf}
+			\caption{0.7\,mJy/beam noise}
+		\end{subfigure}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}{Galactic RM derotation}
+	\begin{columns}[onlytextwidth,t]
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item The framework applies the derotation directly in $\lambda^2$-space as a phase shift.
+			\end{itemize}
+			\vspace{1cm}
+			\begin{equation*}
+				\hat{P}(\lambda^2) = P(\lambda^2)e^{-2i\phi_{\text{GAL}}\lambda^2}
+			\end{equation*}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{figures/galactic_derotation/image (2).png}
+				\caption*{Mean Galactic RM ~\parencite{faradaysky2020}}
+				%\label{fig:my_label}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Spectral index correction}
+	\begin{columns}[onlytextwidth,t]
+		\begin{column}{.5\textwidth}
+			\begin{equation*}
+				F(\phi) = \frac{1}{K}\int_{-\infty}^{\infty}{W(\lambda^2)\frac{P(\lambda^2)}{s(\lambda^2)} {\rm e}^{-2i\phi \lambda^2}~{\rm d}\lambda^2 }
+			\end{equation*}
+
+			\begin{equation*}
+				s(\lambda^2) = \frac{I(\lambda^2)}{I(\lambda^2_0)} = \biggl(\frac{\lambda^2}{\lambda^2_0}\biggr)^{-\alpha/2}
+			\end{equation*}
+			\vspace{1cm}
+			\begin{itemize}
+				\item ~\cite{brentjens}
+				\item For real data we can use FITS/CASA spectral index images
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			% Add lambda^2 plots before and after spectral index correction
+			\begin{figure}
+				\centering
+				\includegraphics[width=.4\textwidth]{figures/dataset_features/spectral_index_correction.pdf}
+				\caption*{$\lambda^2$-space before and after spectral index correction}
+				%\label{fig:my_label}
+			\end{figure}
+		\end{column}
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Compressed sensing reconstruction}
+	\scriptsize
+	\begin{columns}[onlytextwidth,t]
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Technique that aims to solve inverse problems
+				\item Finds the sparsest signal that is consistent with the measurements and to a specific constraint.
+			\end{itemize}
+
 			\begin{align*}
 				\phi = \argmin_x ||Ax-b||_2^2 + \lambda ||x||_1
 			\end{align*}
-			
+
 			\begin{itemize}
-			    \item $A$: Measurement matrix (Fourier transform)
-			    \item $b$: Observed data
-			    \item $x$: Signal or a sparse representation of it.
+				\item $A$: Measurement matrix (Fourier transform)
+				\item $b$: Observed data
+				\item $x$: Signal or a sparse representation of it.
 			\end{itemize}
 
 			\begin{align*}
 				x=\sum_i^N c_i\phi_i.
 			\end{align*}
-        \end{column}
-        
-        \begin{column}{.5\textwidth}
-            \vspace{1.5cm}
-            \begin{figure}
-                \centering
-                \includegraphics[width=\textwidth]{figures/compressed_sensing.png}
-            \end{figure}
-        \end{column}
-            
-        \end{columns}
-    \end{frame}
-    
-    \begin{frame}{Compressed sensing example}
-        % Example of compressed sensing for a LOS
-        \begin{figure}
-            \centering
-            \begin{subfigure}{\textwidth}
-                \centering
-                \includegraphics[width=.9\textwidth]{figures/cs/cs_before.pdf}
-                \caption{Dirty FD spectrum and coefficient representation}
-            \end{subfigure}
-            
-            \begin{subfigure}{\textwidth}
-                \centering
-                \includegraphics[width=.9\textwidth]{figures/cs/cs_after.pdf}
-                \caption{Reconstructed FD spectrum and sparse representation (note sparsity of coefficients!)}
-            \end{subfigure}
-        \end{figure}
-    \end{frame}
-    
-    %\begin{frame}{Multiple regularizations}
-    %    \begin{figure}
-    %        \centering
-    %        
-    %        \begin{subfigure}{0.3\textwidth}
-    %            \includegraphics[width=\textwidth]{figures/regularizations/cs_reg_l1.pdf}
-    %            \caption{L1}
-    %        \end{subfigure}
-    %        \begin{subfigure}{0.3\textwidth}
-    %            \includegraphics[width=\textwidth]{figures/regularizations/cs_reg_l1tsv.pd%f}
-    %            \caption{L1+TSV}
-    %        \end{subfigure}
-    %        \begin{subfigure}{0.3\textwidth}
-    %            %\vspace{0.1cm}
-    %            \includegraphics[width=\textwidth]{figures/regularizations/cs_reg_l1tv.pdf}
-    %            \caption{L1+TV}
-    %        \end{subfigure}
-    %    \end{figure}            
-    %\end{frame}
-    
-    \begin{frame}{Wavelet and performance evaluation}
-    \begin{figure}
-        \centering
-            \includegraphics[width=\textwidth]{figures/wavelets/families_wavelets_meerkat.pdf}
-            \caption*{Peak signal-to-noise ratio, root mean squared error, Akaike AIC and BIC for thin, thick and mixed sources.}
-        
-        %\begin{subfigure}{\textwidth}
-        %    \centering
-        %    \includegraphics[width=0.8\textwidth]{figures/wavelets/families_undecimatedwavelets_meerkat.pdf}
-        %\end{subfigure}
-    \end{figure}
-    \end{frame}
-    
-    
-    \begin{frame}{Preliminary results in the XMMLSS-12 early science field}
+		\end{column}
 
-        \begin{figure}
-        \centering
-        \begin{subfigure}{\textwidth}
-            \centering
-            \includegraphics[width=0.85\textwidth]{figures/plot_rm.pdf}
-            %\caption{Firts subfigure.}
-            %\label{fig:first}
-        \end{subfigure}
-        \begin{subfigure}{\textwidth}
-            \centering
-            \includegraphics[width=0.85\textwidth]{figures/los.pdf}
-            \caption{Dirty, model, residuals and restored Faraday depth spectra.}
-            %\label{fig:second}
-        \end{subfigure}
-        
-        \end{figure}
-    \end{frame}
-    
-    \begin{frame}{Conclusions}
-    \begin{itemize}
-        \item We have already demonstrated this method with real data \parencite{a1314-csromer} (\href{https://arxiv.org/abs/2205.01413}{\texttt{arXiv 2205.01413}}).
-        \item We need to apply this method to all the MIGHTEE-POL survey maps
-        \item Add {\tt cs-romer} RM and RM uncertainties to the MIGHTEE catalog
-        \item Compare the RM values with QU-fitting and naive RM-Synthesis
-        \item We need to incorporate big data and big computing packages such as {\tt dask} and {\tt cupy} to {\tt cs-romer}
-    \end{itemize}
-    \end{frame}
-        
+		\begin{column}{.5\textwidth}
+			\vspace{1.5cm}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{figures/compressed_sensing.png}
+			\end{figure}
+		\end{column}
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Compressed sensing example}
+	% Example of compressed sensing for a LOS
+	\begin{figure}
+		\centering
+		\begin{subfigure}{\textwidth}
+			\centering
+			\includegraphics[width=.9\textwidth]{figures/cs/cs_before.pdf}
+			\caption{Dirty FD spectrum and coefficient representation}
+		\end{subfigure}
+
+		\begin{subfigure}{\textwidth}
+			\centering
+			\includegraphics[width=.9\textwidth]{figures/cs/cs_after.pdf}
+			\caption{Reconstructed FD spectrum and sparse representation (note sparsity of coefficients!)}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
+%\begin{frame}{Multiple regularizations}
+%    \begin{figure}
+%        \centering
+%
+%        \begin{subfigure}{0.3\textwidth}
+%            \includegraphics[width=\textwidth]{figures/regularizations/cs_reg_l1.pdf}
+%            \caption{L1}
+%        \end{subfigure}
+%        \begin{subfigure}{0.3\textwidth}
+%            \includegraphics[width=\textwidth]{figures/regularizations/cs_reg_l1tsv.pd%f}
+%            \caption{L1+TSV}
+%        \end{subfigure}
+%        \begin{subfigure}{0.3\textwidth}
+%            %\vspace{0.1cm}
+%            \includegraphics[width=\textwidth]{figures/regularizations/cs_reg_l1tv.pdf}
+%            \caption{L1+TV}
+%        \end{subfigure}
+%    \end{figure}
+%\end{frame}
+
+\begin{frame}{Wavelet and performance evaluation}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\textwidth]{figures/wavelets/families_wavelets_meerkat.pdf}
+		\caption*{Peak signal-to-noise ratio, root mean squared error, Akaike AIC and BIC for thin, thick and mixed sources.}
+
+		%\begin{subfigure}{\textwidth}
+		%    \centering
+		%    \includegraphics[width=0.8\textwidth]{figures/wavelets/families_undecimatedwavelets_meerkat.pdf}
+		%\end{subfigure}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Preliminary results in the XMMLSS-12 early science field}
+
+	\begin{figure}
+		\centering
+		\begin{subfigure}{\textwidth}
+			\centering
+			\includegraphics[width=0.85\textwidth]{figures/plot_rm.pdf}
+			%\caption{Firts subfigure.}
+			%\label{fig:first}
+		\end{subfigure}
+		\begin{subfigure}{\textwidth}
+			\centering
+			\includegraphics[width=0.85\textwidth]{figures/los.pdf}
+			\caption{Dirty, model, residuals and restored Faraday depth spectra.}
+			%\label{fig:second}
+		\end{subfigure}
+
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Conclusions}
+	\begin{itemize}
+		\item We have already demonstrated this method with real data ~\parencite{a1314-csromer} (\href{https://arxiv.org/abs/2205.01413}{\texttt{arXiv 2205.01413}}).
+		\item We need to apply this method to all the MIGHTEE-POL survey maps
+		\item Add {\tt cs-romer} RM and RM uncertainties to the MIGHTEE catalog
+		\item Compare the RM values with QU-fitting and naive RM-Synthesis
+		\item We need to incorporate big data and big computing packages such as {\tt dask} and {\tt cupy} to {\tt cs-romer}
+	\end{itemize}
+\end{frame}
+
 \end{document}

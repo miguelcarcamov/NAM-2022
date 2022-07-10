@@ -1,0 +1,34 @@
+repos:
+- repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+  rev: v2.3.0
+  hooks:
+  - id: pretty-format-yaml
+    args: [--autofix, --indent, '2']
+  - id: pretty-format-toml
+    args: [--autofix]
+
+- repo: https://github.com/jonasbb/pre-commit-latex-hooks
+  rev: v1.3.0
+  hooks:
+     # - id: american-eg-ie
+    # - id: cleveref-capitalization
+  - id: consistent-spelling
+    args: [--emph=et al., --emph=a priori, --emph=a posteriori, --regex=naive=\bna(i|\\"i)ve]
+  - id: csquotes
+  # - id: ensure-labels-for-sections
+  - id: no-space-in-cite
+  - id: tilde-cite
+  # - id: unique-labels
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.2.0
+  hooks:
+  - id: check-yaml
+  - id: end-of-file-fixer
+  - id: check-merge-conflict
+  - id: trailing-whitespace
+
+- repo: https://github.com/cmhughes/latexindent.pl.git
+  rev: V3.18
+  hooks:
+  - id: latexindent
