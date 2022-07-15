@@ -15,6 +15,7 @@
 \DeclareMathOperator*{\argmin}{arg\,min}
 \renewcommand*{\nameyeardelim}{\addcomma\space}
 
+
 \usetheme{modern}
 
 \addbibresource{biblio.bib}
@@ -68,7 +69,7 @@
 %\end{columns}
 
 % \end{frame}
-\begin{frame}{Studying magnetic fields using Faraday Rotation}
+\begin{frame}<0>{Studying magnetic fields using Faraday Rotation}
 	\begin{figure}
 		\centering
 		\includegraphics[width=.8\textwidth]{figures/faraday_rot.png}
@@ -168,30 +169,87 @@
 	\end{tikzpicture}
 \end{frame}
 
-% \begin{frame}{Problems in wavelength squared space}
-%
-% \begin{columns}[onlytextwidth,t]
-%     \begin{column}{.7\textwidth}
-%         \begin{figure}
-%             \centering
-%             \includegraphics[width=\textwidth]{figures/example_ursi.pdf}
-%             %\caption{Caption}
-%             %\label{fig:my_label}
-%         \end{figure}
-%     \end{column}
-%     \begin{column}{.3\textwidth}
-%         \begin{itemize}
-%            \item No data at $\lambda^2 < 0 $
-%             \item Irregular spacing in $\lambda^2$-space
-%             \item Samples are flagged due to RFI excision
-%             \item \alert{NOISE!}
-%         \end{itemize}
-%     \end{column}
-% \end{columns}
+\begin{frame}<0>{MeerKAT}
+	\begin{columns}[onlytextwidth,t]
+		% Column 1
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Square Kilometre Array (SKA) precursor
+				\item 64 antennas
+				\item Dish diameter: 13.5 m
+				\item Baselines from 29 m to 7700 m
+				\item Frequency range [L-band]: 900 - 1670 MHz
+				\item Resolution $\sim$ 9''
+			\end{itemize}
+		\end{column}
+		% Column 2
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{figures/MeerKATDeep2_compositeV6.jpg}
+				\caption*{Credit: SARAO}
+			\end{figure}
+		\end{column}%
 
-% \end{frame}
+	\end{columns}
+\end{frame}
 
-\begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
+\begin{frame}{THE MIGHTEE-POL survey [Early science]}
+	\begin{columns}[onlytextwidth,t]
+		% Column 1
+		\begin{column}{.5\textwidth}
+			\textbf{COSMOS}
+			\begin{itemize}
+				\item 17.45\;hrs observation
+				\item 1.6\;deg$^{2}$
+				\item Noise: 1.7\;$\mu$Jy/beam
+				\item  Resolution: 8.6''
+				\item 9,896 sources
+			\end{itemize}
+		\end{column}
+		% Column 2
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.2]{figures/mightee_survey/cosmos.png}
+				\caption*{COSMOS Stokes I Continuum map ~\parencite{mightee-pol}}
+				\label{fig:cosmos}
+			\end{figure}
+		\end{column}%
+
+	\end{columns}
+
+\end{frame}
+
+\begin{frame}{THE MIGHTEE-POL survey [Early science]}
+	\begin{columns}[onlytextwidth,t]
+		% Column 1
+		% Column 2
+		\begin{column}{.5\textwidth}
+			\textbf{XMMLSS}
+			\begin{itemize}
+				\item 16.05, 16.12, 16.03 hrs observation
+				\item Three fields that cover 3.5\;deg$^{2}$
+				\item Resolution: 8.2''
+				\item 20,274 sources
+			\end{itemize}
+
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[scale=0.3]{figures/mightee_survey/xmmlss.png}
+				\caption*{XMMLSS Stokes I Continuum mosaic map ~\parencite{mightee-pol}}
+				\label{fig:xmmlss}
+			\end{figure}
+		\end{column}
+
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}<0>{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.2\textwidth]{figures/logos/GitHub-Mark-120px-plus.png}
@@ -205,6 +263,7 @@
 
 
 \end{frame}
+
 
 \begin{frame}{CS-ROMER: Compressed Sensing ROtation MEasure Reconstruction}
 	\begin{columns}[onlytextwidth,t]
@@ -346,7 +405,7 @@
 
 
 
-\begin{frame}{Thin, thick, mixed/complex sources}
+\begin{frame}<0>{Thin, thick, mixed/complex sources}
 
 	\begin{figure}
 		\centering
@@ -368,7 +427,7 @@
 
 \end{frame}
 
-\begin{frame}{RFI \& noise example}
+\begin{frame}<0>{RFI \& noise example}
 
 	\begin{figure}
 		\centering
@@ -516,7 +575,7 @@
 %    \end{figure}
 %\end{frame}
 
-\begin{frame}{Wavelet and performance evaluation}
+\begin{frame}<0>{Wavelet and performance evaluation}
 	\begin{figure}
 		\centering
 		\includegraphics[width=\textwidth]{figures/wavelets/families_wavelets_meerkat.pdf}
